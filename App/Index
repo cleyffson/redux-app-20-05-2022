@@ -1,0 +1,37 @@
+//arrow function
+//home: criarContrato
+//recebe: nome e valor
+//devolve: um JASON com type = CRIAR_CONTRATO E payload a um JASON com nome e valor
+
+const criarContrato (nome,valor) => {
+    return{
+        type: "CRIAR_CONTRATO",
+        payload: {
+            nome, valor
+        }
+    }
+}
+
+//function regular (usar function)
+//cancelarContrato
+//recebe: nome
+//devolve: um JASON com type = CANCELAR_CONTARTO e payload igual a um JASON com nome
+
+const cancelarContrato (nome) {
+    return{
+        type: "CANCELAR_CONTRATO",
+        payload: {
+            nome
+        }
+    }
+
+
+    //uma funcao criadora de acao para solicitaçoes de cashback
+        const solicitarCashback (nome, valor) {
+            return{
+                type: "SOLICITAR_CASHBACK",
+                pauload: {
+                    nome, valor
+                }
+            }
+        }
